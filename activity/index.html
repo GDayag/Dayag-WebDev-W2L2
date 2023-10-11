@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee Shop Order Form</title>
+    <link rel="stylesheet" href="style.css">
+
+   
+</head>
+
+<body>
+    <div class="container">
+        <h1> Milktea House</h1> 
+        <form method="POST" action="order.php">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="address">Address:</label>
+            <input type="text" id="Address" name="Address" required>
+
+            <label for="Menu">Menu:</label>
+            <select id="Menu" name="Menu" required>
+                <option value="Okinawa">Okinawa</option>
+                <option value="Wintermelon">Wintermelon</option>
+                <option value="Cheese Cake">Cheese Cake</option>
+                <option value="Dark Choco">Dark Choco</option>
+                <option value="Salted Caramel">Salted Caramel</option>
+                <option value="Taro">Taro</option>
+                <option value="Choco Hazelnut">Choco Hazelnut</option> - ₱70</option>
+                <option value="Double Dutch">Double Dutch</option> - ₱70</option>
+                <option value="Strawberry - ₱65">Strawberry</option> - ₱70</option>
+
+            </select>
+
+            <div class="input-group">
+                <label>Size:</label>
+                <input type="radio" id="Regular" name="size" value="Regular">
+                <label for="Regular">Regular ₱80</label>
+
+                <input type="radio" id="large" name="size" value="large">
+                <label for="large">Large: ₱100</label>
+            </div>
+
+            <div class="input-group">
+                <label>Add-ons:</label>
+                <input type="checkbox" id="Cream cheese" name="extras[]" value="cream">
+                <label for="Cream cheese">Cream Cheese: ₱20</label>
+
+                <input type="checkbox" id="Pearl" name="extras[]" value="cream">
+                <label for="Pearl">Pearl: ₱10.50</label>
+
+                <input type="checkbox" id="Jelly" name="extras[]" value="cream">
+                <label for="Jelly">Jelly: ₱10.50</label>
+            </div>
+
+            <label for="instructions">Special Instructions:</label>
+            <textarea id="instructions" name="instructions" rows="4"></textarea>
+
+          <div>
+            <input type="submit" value="Place Order">
+          </div>
+        </form>
+    </div>
+</body>
+
+</html>
